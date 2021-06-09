@@ -5,6 +5,7 @@
 
 function formatDate(userDate) {
   // format from M/D/YYYY to YYYYMMDD
+  return userDate=userDate.split('/').reverse().join('');
 }
 
 console.log(formatDate("12/31/2014"));
