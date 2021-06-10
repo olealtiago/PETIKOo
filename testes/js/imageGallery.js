@@ -28,7 +28,11 @@
 
 
 function setup () {
-  // Write your code here.
+    var button = document.querySelector(".remove");
+    button.addEventListener("click", function(){
+        var image = document.querySelector(".image");
+        image.remove();
+    }); 
 }
 
 // Example case. 
