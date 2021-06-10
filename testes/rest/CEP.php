@@ -41,7 +41,9 @@ class CEP
 {
     public static function getAddressByCep($cep)
     {
-        return NULL;
+        $url = "https://api.postmon.com.br/v1/cep/{$cep}";
+        $adress=file_get_contents($url);
+        return $adress;
     }
 }
 
