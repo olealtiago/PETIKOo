@@ -19,7 +19,19 @@ class Palindrome
 {
     public static function isPalindrome($word)
     {
-        return NULL;
+        $word = strtolower($word);
+        $sizeWord = strlen($word)-1;
+        $saida='';
+        //inverte a palavra
+        for($x=$sizeWord; $x>=0; $x--){
+            $saida .= $word[$x];
+        }
+        if($saida==$word){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
 
