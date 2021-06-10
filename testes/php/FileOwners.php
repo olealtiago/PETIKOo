@@ -15,7 +15,9 @@ class FileOwners
 {
     public static function groupByOwners($files)
     {
-        return NULL;
+        asort($files);
+        foreach($files as $a => $b){}
+        return $files;
     }
 }
 
